@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: AdventureWorksDW2019
+    description: 'A sample database provided'
+    database: AdventureWorksDW2019  
+    schema: dbo  
+    tables:
+      - name: DimProduct
+        description: 'Details about products'
+
+  - name: AdventureWorks2019
+    description: 'A sample database provided from Production'
+    database: AdventureWorks2019  
+    schema: Production  
+    tables:
+      - name: Product
+        description: 'Product'
+
+  - name: WideWorldImportersDW
+    description: 'A sample database provided from WWIDW'
+    database: WideWorldImportersDW
+    schema: Dimension 
+    tables:
+      - name: Supplier
+        description: 'Supplier'
+

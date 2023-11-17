@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: TennisGoat_details
+    description: "Model"
+
+    columns:
+      - name: "Winner"
+        description: "List of winners"
+        tests:
+          - is_adam_winner
+
+      - name: "Runner"
+        description: "List of runners "
+
+      - name: "Tournament"
+        description: "List of tournaments"
+        
+      - name: "Year"
+        description: "Year "
+
+ 
