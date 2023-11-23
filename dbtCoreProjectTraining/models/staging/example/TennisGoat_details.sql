@@ -20,4 +20,4 @@ WITH TennisGoat AS (
    
 )
 
-SELECT * FROM final
+SELECT *,'{{ invocation_id }}' as invocation_id FROM final

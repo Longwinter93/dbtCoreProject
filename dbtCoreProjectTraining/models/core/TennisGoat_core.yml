@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: TennisGoat_details
+  - name: TennisGoat_details_core
     description: "Model"
 
     columns:
@@ -18,5 +18,4 @@ models:
         
       - name: "Year"
         description: '{{ doc("TennisGoat_Year") }}'
-
  

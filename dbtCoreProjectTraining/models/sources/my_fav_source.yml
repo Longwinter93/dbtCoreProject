@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: my_fav_source
+    database: dbtCoreTutorial
+    schema: dbo
+    tables:
+      - name: my_fav_source
+    freshness:
+        warn_after: {count: 15, period: minute}
+        error_after: {count: 20, period: minute}
+        filter: datediff(mi, created_at,current_timestamp) < 2894
+    loaded_at_field: created_at

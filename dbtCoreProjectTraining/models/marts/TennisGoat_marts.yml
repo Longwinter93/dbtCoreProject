@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: TennisGoat_details
+  - name: TennisGoat_details_marts
     description: "Model"
 
     columns:
