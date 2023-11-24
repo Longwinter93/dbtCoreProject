@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: ContosoRetailDW
+    description: 'A sample database provided'
+    database: ContosoRetailDW  
+    schema: dbo  
+    tables:
+      - name: FactSales
+        description: 'Details about Sales'
+
+  - name: ContosoRetailDW
+    description: 'A sample database provided'
+    database: ContosoRetailDW  
+    schema: dbo  
+    tables:
+      - name: FactInventory
+        description: 'Details about FactInventory'
+
+  - name: ContosoRetailDW
+    description: 'A sample database provided'
+    database: ContosoRetailDW  
+    schema: dbo  
+    tables:
+      - name: DimAccount
+        description: 'Details about FactInventory'
+  
+  

@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: WideWorldImporters
+    description: 'A sample database provided'
+    database: WideWorldImporters  
+    schema: Sales  
+    tables:
+      - name: Invoices
+        description: 'Details about Invoices'
+
+  - name: WideWorldImporters
+    description: 'A sample database provided'
+    database: WideWorldImporters  
+    schema: Sales  
+    tables:
+      - name: Orders
+        description: 'Details about FactInventory'
+
+      
+  - name: WideWorldImporters
+    description: 'A sample database provided'
+    database: WideWorldImporters  
+    schema: Application  
+    tables:
+      - name: TransactionTypes
+        description: 'Details about FactInventory'
+  
+  

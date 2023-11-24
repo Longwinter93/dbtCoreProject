@@ -27,6 +27,7 @@ target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
+  - "demo_logs"
 
 
 on-run-start: "{{ insert_audits('run_start') }}"
@@ -47,5 +48,33 @@ models:
       +materialized: view
       +schema: staging
       example:
+        +tags: 
+          - p1
+          - another_tag
         +materialized: view
+      sample_data:
+        +tags: 
+          - p2
+        +materialized: table
+        +schema: SampleData
+     # Config indicated by + and applies to all files under models/salesdata/
+    salesdata:
+      City:
+        +materialized: view
+        +schema: CityVoivodeship
+        +tags:
+          - city
+      CRDW:
+        +materialized: table
+        +schema: CRDW
+        +tags:
+          - CRDWtag
+      WWI:
+        +materialized: table
+        +schema: WWI
+        +tags:
+          - WWITag
+
+      
+   
 
