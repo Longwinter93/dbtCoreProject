@@ -5,14 +5,4 @@ models:
     description: 'cities with Voivodeships'
     columns:
       - name: City
-        tags: 
-          - test_City
-        tests:
-          - unique 
-          - not null
       - name: Voivodeship
-        tags: 
-          - test_Voivodeship
-        tests:
-          - unique 
-          - not null
