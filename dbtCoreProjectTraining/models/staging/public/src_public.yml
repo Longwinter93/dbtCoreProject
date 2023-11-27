@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: HIPHOPARTIST
+    database: DEVdbtCoreTutorial
+    schema: dbo
+    tables:
+      - name: HIP_HOP_ARTIST
