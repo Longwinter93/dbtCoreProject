@@ -23,6 +23,30 @@ sources:
     schema: dbo  
     tables:
       - name: DimAccount
-        description: 'Details about FactInventory'
+        description: 'Details about DimAccount'
+
+  - name: ContosoRetailDW
+    description: 'A sample database provided'
+    database: ContosoRetailDW  
+    schema: dbo  
+    tables:
+      - name: DimStore
+        description: 'Details about Store'
+
+  - name: ContosoRetailDW
+    description: 'A sample database provided'
+    database: ContosoRetailDW  
+    schema: dbo  
+    tables:
+      - name: DimDate
+        description: 'Details about Date'
+
+  - name: ContosoRetailDW
+    description: 'A sample database provided'
+    database: ContosoRetailDW  
+    schema: dbo  
+    tables:
+      - name: DimProduct
+        description: 'Details about Product'
   
   

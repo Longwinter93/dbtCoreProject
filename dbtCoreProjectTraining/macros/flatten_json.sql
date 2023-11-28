@@ -1,9 +1,11 @@
+{% macro flatten_json(model_name, json_column) %}
+
 {% set json_query %}
 SELECT DISTINCT Keys.[key]
-FROM {{ source('HIPHOPARTIST', 'HIP_HOP_ARTIST')}} t
+FROM {{ model_name }}  t
 CROSS APPLY (
     SELECT [key] [key]
-    FROM OPENJSON((SELECT t.ARTIST_DATA))
+    FROM OPENJSON((SELECT t.{{ json_column }}))
 ) Keys
 {% endset %}
 
@@ -18,11 +20,13 @@ CROSS APPLY (
 {% endif %}
 
 select
-artist_data,
+{{ json_column }},
 {% for column_name in results_list %}
-JSON_VALUE(artist_data, '$.{{column_name }}') as {{ column_name }}
+JSON_VALUE({{ json_column }}, '$.{{column_name }}') as {{ column_name }}
 {% if not loop.last %},{% endif %}
 
 {% endfor %}
-FROM {{ source('HIPHOPARTIST', 'HIP_HOP_ARTIST')}} 
+FROM {{ model_name }} 
 
+
+{% endmacro %}
