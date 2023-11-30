@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+  - name: inventory_product_analysis
+    type: analysis
+    description: "The example of exposures in my project - analysis"
+
+
+    depends_on:
+      - ref('InventoryProduct')
+      - source('ContosoRetailDW','DimProduct')
+      - source('ContosoRetailDW','FactInventory')
+
+    owner:
+      name: Lukasz
+      email: mail@gmail.com

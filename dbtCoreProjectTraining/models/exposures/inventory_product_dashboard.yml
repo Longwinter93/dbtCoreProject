@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+  - name: inventory_product_dashboard
+    type: dashboard
+    description: "The example of exposures in my project - dashboard"
+
+
+    depends_on:
+      - ref('InventoryProduct')
+      - ref('DimProduct') 
+      - source('ContosoRetailDW','FactInventory')
+
+    owner:
+      name: Lukasz
+      email: mail@gmail.com
