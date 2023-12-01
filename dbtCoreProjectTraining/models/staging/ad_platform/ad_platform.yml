@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: ad_platform
+    database: DEVdbtCoreTutorial
+    schema: dbo
+
+    tables:
+     - name: ad_platform
