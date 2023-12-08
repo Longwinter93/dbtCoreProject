@@ -25,3 +25,11 @@ sources:
       - name: Supplier
         description: 'Supplier'
 
+  - name: DEVdbtCoreTutorial
+    description: 'A sample data provided from staging layer for invoices'
+    database: DEVdbtCoreTutorial
+    schema: SampleData 
+    tables:
+      - name: StagingInvoices
+        description: 'Invoices'
+

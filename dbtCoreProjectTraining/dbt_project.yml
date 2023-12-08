@@ -3,7 +3,7 @@
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
 name: 'dbtCoreProjectTraining'
-version: '1.0.0'
+version: '1.4.9'
 config-version: 2
 
 vars:
@@ -74,6 +74,13 @@ models:
         +schema: WWI
         +tags:
           - WWITag
+      InvoiceData:
+        +materialized: table
+        +schema: Invoice
+        +tags:
+          - InvoiceTag
+
+
 
       
    
