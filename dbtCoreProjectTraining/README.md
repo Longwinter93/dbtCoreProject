@@ -1,15 +1,36 @@
-Welcome to your new dbt project!
+# dbtCoreProjectTraining
+## DESCRIPTION OF PROJECT
 
-### Using the starter project
+<br />The main goal of this project was to perform and test all ***dbt core's functions***
+<br />_dbt-sql server adapter_ was installed to connect to **Microsoft SQL Server**.
 
-Try running the following commands:
+<br />This project was create to practise resources that were configured on **dbt_project.yml**.
+<br />dbt models in a warehouse was periststed by using **Materializations**.
+<br />What is more, **incremental model** was also configured.
+<br />**Doc function** was used to reference docs blocks in the description field of schema.yml files.
+<br />**Jinja** a templating language was combined with SQL especially {{ref}} & {{source}} functions in models and in this project.
+<br />In addition, **Macros** in Jinija was also utilized in order to reuse a piece of codes multiple times.
+<br />**Variables** were also defined and invocation_id outputs to generate UUID.
+<br />**Hooks and operations** in this dbt project was used to version control and execute statements as part of the dbt project.
+<br />**A analyses folder** was created in order to compile models, but not to execute.
+<br />**A exposures folder** was created so as to define and describe a downstream use of this dbt project. 
+
+## dbt commands
+
+<br />dbt project was configured that it was possible to run these commands in terminal: 
 - dbt run
+- dbt init
+- dbt debug
+- dbt deps
+- dbt clean
 - dbt test
+- dbt build
+- dbt seed
+- dbt snapshot
+- dbt ls
+- dbt compile
+- dbt freshness
+- dbt docs serve
+- dbt docs generate
+- dbt show
 
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
