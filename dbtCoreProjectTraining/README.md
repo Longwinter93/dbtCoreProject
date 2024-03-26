@@ -17,7 +17,7 @@
 
 ## dbt commands
 
-<br />dbt project was configured that it was possible to use these commands: 
+<br />dbt project was configured that it was possible to run these commands in terminal: 
 - dbt run
 - dbt init
 - dbt debug
