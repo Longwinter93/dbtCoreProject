@@ -2,7 +2,7 @@
 ## DESCRIPTION OF PROJECT
 
 <br />The main goal of this project was to perform and test all ***dbt core's functions***
-<br />_dbt-sql server adapter_ was installed.
+<br />_dbt-sql server adapter_ was installed to connect to **Microsoft SQL Server**.
 
 <br />This project was create to practise resources that were configured on **dbt_project.yml**.
 <br />dbt models in a warehouse was periststed by using **Materializations**.
