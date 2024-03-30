@@ -1,6 +1,6 @@
 # dbtCore
 **dbt Core** enables data analysts and data engineers to transform their data by simply writing select statements, while dbt handles turning these statements into tables and views in a data warehouse. These select statements or "models" form a dbt project. Dbt core makes it easy to manage relationships between models, visualise these relationships and assure the quality of your transformations through testing.
-It develops the project from the command line and run dbt projects
+It develops the project from the command line and run dbt projects.
 
 There is only one project [dbtCoreProject](https://github.com/Longwinter93/dbtCoreProject/tree/main/dbtCoreProjectTraining). 
 
