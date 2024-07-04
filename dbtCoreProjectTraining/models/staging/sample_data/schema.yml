@@ -24,12 +24,11 @@ sources:
     tables:
       - name: Supplier
         description: 'Supplier'
-
-  - name: DEVdbtCoreTutorial
+# To start with, it is necessary to create this table before running models
+  - name: dbtCoreTutorial
     description: 'A sample data provided from staging layer for invoices'
-    database: DEVdbtCoreTutorial
+    database: dbtCoreTutorial
     schema: SampleData 
     tables:
       - name: StagingInvoices
         description: 'Invoices'
-
