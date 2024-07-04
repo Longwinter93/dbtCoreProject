@@ -30,8 +30,15 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "demo_logs"
 
 
-on-run-start: "{{ insert_audits('run_start') }}"
-on-run-end: "{{ insert_audits('run_end') }}"
+on-run-start: 
+  - "{{ insert_audits('run_start') }}"
+  - "{{ detailedaudittable() }}"
+
+
+
+on-run-end:
+  - "{{ insert_audits('run_end') }}"
+
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -40,8 +47,14 @@ on-run-end: "{{ insert_audits('run_end') }}"
 # directory as views. These settings can be overridden in the individual model
 # files using the `{{ config(...) }}` macro.
 models:
-  pre-hook: "{{ insert_audits('model_start') }}"
-  post-hook: "{{ insert_audits('model_end') }}"
+  pre-hook: 
+    - "{{ insert_audits('model_start') }}"
+    - "{{ insertstartdatatodetailedaudittable() }}"
+
+  post-hook: 
+   - "{{ insert_audits('model_end') }}"
+   - "{{ insertenddatatodetailedaudittable() }}"
+
   dbtCoreProjectTraining:
     # Config indicated by + and applies to all files under models/staging/
     staging:
